@@ -1,0 +1,20 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+
+}
+
+.header {
+	font-family: $header-font;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
