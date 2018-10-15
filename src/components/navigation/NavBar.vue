@@ -1,6 +1,8 @@
 <template>
   <div class="nav-bar">
-    <p class="header">LUNA GRÄDEL</p>
+    <router-link to="/">
+      <p class="header">LUNA GRÄDEL</p>
+    </router-link>
     <div v-on:click="toggleMenu" class="burger-menu">
       <div v-for="(n, index) in 3" :key="index" class="burger-line">
       </div>
@@ -20,7 +22,7 @@ export default {
     }
   },
   methods: {
-    toggleMenu: function(){
+    toggleMenu() {
       this.showMenu = !this.showMenu;
     }
   },

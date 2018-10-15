@@ -7,6 +7,7 @@
   @include flexbox();
   @include justify-content(space-between);
   @include align-items(center);
+  z-index: 9999;
 
   .header {
     font-size: 20px;
