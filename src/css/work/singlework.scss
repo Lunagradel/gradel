@@ -1,0 +1,106 @@
+.singlework-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 10vh;
+  animation: upyougo .9s both;
+
+  &.go-down {
+    animation: downyougo .9s both;
+  }
+
+  .sw-top {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    .gradient-layer {
+      width: 100%;
+      height: 90%;
+      position: absolute;
+      bottom: -0.2%;
+      left: 0;
+    }
+
+    .close {
+      float: right;
+      padding: 20px 20px 0 0;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .sw-content {
+    width: 100%;
+    height: auto;
+
+    .sw-images {
+      width: 100%;
+      height: auto;
+      padding: 15px 3%;
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(space-around);
+
+      .sw-img {
+        width: 55%;
+        height: auto;
+
+        &:nth-of-type(2) {
+          @include align-self(flex-end);
+          margin-top: 20px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+
+    .sw-text {
+      width: 100%;
+      padding: 20px 0 40px 0;
+
+      span {
+        @include flexbox();
+        @include center();
+        @include flex-direction(column);
+      }
+
+      p {
+        width: 40%;
+        font-family: $body-font;
+        line-height: 1.8em;
+        padding-bottom: 15px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+
+    }
+  }
+}
+
+@keyframes upyougo {
+  0%{
+    top: 10vh;
+  }
+  100%{
+    top: -75vh;
+  }
+}
+
+@keyframes downyougo {
+  0%{
+    top: -75vh;
+  }
+  100%{
+    top: 10vh;
+  }
+}
