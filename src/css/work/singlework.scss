@@ -40,13 +40,13 @@
     .sw-images {
       width: 100%;
       height: auto;
-      padding: 15px 3%;
+      padding: 90px 3% 25px 3%;
       @include flexbox();
       @include flex-direction(column);
       @include justify-content(space-around);
 
       .sw-img {
-        width: 55%;
+        width: 60%;
         height: auto;
 
         &:nth-of-type(2) {
@@ -75,6 +75,7 @@
         width: 40%;
         font-family: $body-font;
         line-height: 1.8em;
+        text-align: justify;
         padding-bottom: 15px;
 
         &:last-child {

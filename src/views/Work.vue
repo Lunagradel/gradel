@@ -10,7 +10,7 @@
         <div v-for="(item, index) in workData" :key="index" class="work-element" v-on:click="handleClick(index)" v-bind:style="{ backgroundImage: 'url(' + require('./../assets/' + item.images.header) + ')' }">
           <div class="element-overlay">
           </div>
-          <p class="header">{{item.thumbName}}</p>
+          <p class="header" :style="{color: item.thumbColor, backgroundColor: item.backgroundColor}">{{item.thumbName}} &#8594;</p>
         </div>
       </div>
       <SingleWork v-if="showSingleWork" v-bind:chosen="chosenWork" @closeSingle="handleShowSW" @startAnimate="animate = false"/>
