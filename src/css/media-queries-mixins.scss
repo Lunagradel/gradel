@@ -1,0 +1,21 @@
+$smMobile: 320px;
+$mobile: 576px;
+$tablet: 768px;
+
+@mixin sm-mobile {
+  @media screen and (max-width: #{$smMobile}){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile}){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet}){
+    @content;
+  }
+}

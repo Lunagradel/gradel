@@ -57,6 +57,14 @@
         img {
           width: 100%;
         }
+
+        @include mobile {
+          width: 95%;
+        }
+      }
+
+      @include mobile {
+        padding-top: 60px;
       }
 
     }
@@ -81,9 +89,16 @@
         &:last-child {
           padding-bottom: 0;
         }
+
+        @include mobile {
+          width: 80%;
+          text-align: left;
+        }
+
+        @include sm-mobile {
+          font-size: 14px;
+        }
       }
-
-
     }
   }
 }

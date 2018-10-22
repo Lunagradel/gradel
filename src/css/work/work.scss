@@ -34,13 +34,16 @@
       &.remove {
         animation: remove .9s both;
       }
+
+      @include mobile {
+    		font-size: 30px;
+    	}
     }
   }
 
   .work-container{
     width: 100%;
     padding: 3%;
-    max-height: 1800px;
 
     .work-elements {
       width: 100%;
@@ -99,6 +102,19 @@
           font-size: 20px;
           padding: 10px;
           position: absolute;
+
+          @include mobile {
+            font-size: 12px;
+          }
+
+          @include sm-mobile {
+            padding: 8px;
+            font-size: 10px;
+          }
+        }
+
+        @include mobile {
+          padding: 10px;
         }
 
       }
